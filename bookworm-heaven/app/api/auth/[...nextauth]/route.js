@@ -45,6 +45,8 @@ const authenticate = {
 
 const authHandler = (req, res) => NextAuth(req, res, authenticate);
 
+export { authHandler };
+
 // Export named handlers for each HTTP method
 export async function GET(req, res) {
   return authHandler(req, res);
