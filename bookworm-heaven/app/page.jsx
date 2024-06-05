@@ -20,11 +20,11 @@ export default function Home() {
                           ex ea commodo consequat.
                       </p>
                       <div class="mt-8 flex flex-col items-center md:flex-row md:space-x-4">
-                        <a href="#"
+                        <a href="/signin"
                             class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-green-600 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md rounded-lg mb-4 md:mb-0 md:w-48">
                               Login
                         </a>
-                        <a href="#"
+                        <a href="/register"
                             class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-green-600 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md rounded-lg md:w-48">
                               Register
                         </a>

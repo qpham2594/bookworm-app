@@ -1,16 +1,16 @@
 import Link from "next/link"
 import { getServerSession } from "next-auth"
-import authenticate from "@/app/api/auth/[...nextauth]/route.js"
+import {authHandler} from "@/app/api/auth/[...nextauth]/route.js"
 import { signOut } from "next-auth/react"
 
 export default async function Header() {
-    const session = await getServerSession(authenticate)
+    const session = await getServerSession(authHandler)
     return (
         <header className="bg-white py-4">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                 <div className="md:flex md:items-center md:gap-12">
-                    <a className="block text-teal-600" href="#">
+                    <a className="block text-teal-600" href="/">
                     <span className="sr-only">Home</span>
                     <svg className="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -26,9 +26,9 @@ export default async function Header() {
                 {session ? (
                     <>
                         <ul className="flex items-center gap-6 text-sm">                       
-                        <li><Link href="#"> Dashboard </Link></li>
-                        <li><Link href="#"> Favorites </Link></li>
-                        <li><Link href="#"> Book Search </Link></li>
+                        <li><Link href="/dashboard"> Dashboard </Link></li>
+                        <li><Link href="/favorites"> Favorites </Link></li>
+                        <li><Link href="/search"> Book Search </Link></li>
                         <li><Link href="/signout"> Signout </Link></li>
                         </ul>    
                     </>  

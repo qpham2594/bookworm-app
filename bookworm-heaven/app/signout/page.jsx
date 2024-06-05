@@ -1,12 +1,12 @@
-"use client"
-
-import { signOut } from "next-auth/react";
-
+import Header from "../components/header";
+import SignOut from "../components/signout";
 
 export default function SignOutPage() {
   return (
-    <div>
-        <button onClick={signOut}> Signout Confirmation </button>
+    <div> 
+      <Header/>      
+      <SignOut/>
     </div>
+
   )
 }

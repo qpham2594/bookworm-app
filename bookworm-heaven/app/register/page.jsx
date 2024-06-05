@@ -1,7 +1,12 @@
 import Register from "../components/register"
+import Header from "../components/header"
  
-export default function Page() {
+export default function RegisterPage() {
   return (
-    <Register/>
+    <div>
+      <Header/>
+      <Register/>
+    </div>
+
   )
 }

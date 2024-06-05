@@ -1,5 +1,12 @@
 import Login from "../components/signin";
-
+import Header from "../components/header";
+ 
 export default function SignInPage() {
-  return <Login/>;
+  return (
+    <div>
+      <Header/>
+      <Login/>
+    </div>
+
+  )
 }
