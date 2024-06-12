@@ -27,8 +27,8 @@ export default async function Header() {
                     <>
                         <ul className="flex items-center gap-6 text-sm">                       
                         <li><Link href="/dashboard"> Dashboard </Link></li>
+                        <li><Link href="/wishlist"> Wishlist </Link></li>
                         <li><Link href="/favorites"> Favorites </Link></li>
-                        <li><Link href="/search"> Book Search </Link></li>
                         <li><Link href="/signout"> Signout </Link></li>
                         </ul>    
                     </>  

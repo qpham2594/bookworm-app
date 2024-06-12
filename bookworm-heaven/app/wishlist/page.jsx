@@ -1,11 +1,11 @@
 import Header from "../components/header";
-import FavoritesComponent from "../components/favorites";
+import Wishlist from "../components/wishlist";
 
 export default function Favorites() {
     return(
         <main>
             <Header/>
-            <FavoritesComponent/>
+            <Wishlist/>
         </main>
     )
 }

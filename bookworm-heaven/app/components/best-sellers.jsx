@@ -2,6 +2,7 @@
 
 import { bestSellers } from "../api/route";
 import { useEffect, useState } from "react";
+import SearchComponent from "./search-feature";
 
 async function bestSellersList() {
     try {
@@ -30,10 +31,15 @@ export default function BestSellersComponent() {
     }, []);
 
     return (
-        <main className="p-6">
+        <main className="p-10">
             <div className="flex justify-between">
                 <div className="w-full">
-                    <h1> Hello there </h1>
+                    <h1 className="text-4xl font-bold mb-4"> Welcome back </h1>
+                        <p className="mb-8">
+                            Are you ready to add a book to to your wish list, or your favorite list? <br/>
+                            Let's get you started!
+                        </p>
+                        <SearchComponent/>
 
                 </div>
                 <div className="w-1/4">
@@ -48,9 +54,9 @@ export default function BestSellersComponent() {
                                         className="w-18 h-24 object-cover mr-4 mb-4"
                                     />
                                     <div>
-                                        <p className="font-semibold"> Title: {book.title}</p>
-                                        <p className="text-md"> Author: {book.author}</p>
-                                        <p className="text-sm"> Description: {book.description}</p>           
+                                        <p className="font-semibold"> {book.title}</p>
+                                        <p className="text-md mb-2"> Author: {book.author}</p>
+                                        <p className="text-sm"> {book.description}</p>           
                                     </div>
                                 </li>
                             ))                   

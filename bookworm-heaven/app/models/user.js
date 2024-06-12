@@ -19,6 +19,10 @@ const User = new Schema({
     favorites: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "Favorites"
+    }],
+    wishlist: [{
+        type:mongoose.Schema.Types.ObjectId,
+        ref: "Wishlist"
     }]
 })
 
