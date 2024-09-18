@@ -6,7 +6,7 @@ import { signOut } from "next-auth/react"
 export default async function Header() {
     const session = await getServerSession(authHandler)
     return (
-        <header className="bg-white py-4">
+        <header className="bg-lightbrown py-4">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                 <div className="md:flex md:items-center md:gap-12">

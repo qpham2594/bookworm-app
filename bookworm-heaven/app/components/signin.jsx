@@ -23,7 +23,7 @@ export default function Login() {
     if (res?.error) {
       setError(res.error);
     } else {
-      router.push('/'); // Redirect to home page or another page on successful login
+      router.push('/dashboard'); // Direct to dashboard page
     }
   };
 
