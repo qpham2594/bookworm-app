@@ -8,7 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lightbrown: '#D2B48C'
+        lightpurple: '#f5ebff',
+        lightmedpurple: '#eae4ff',
+        medpurple: '#dddeff',
+        meddarkpurple: '#ccd8ff',
+        darkpurple: '#b9c9fb',
+        lightyellow: '#FFDAB9'
       },
     },
   },

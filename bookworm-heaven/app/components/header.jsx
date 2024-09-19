@@ -6,7 +6,7 @@ import { signOut } from "next-auth/react"
 export default async function Header() {
     const session = await getServerSession(authHandler)
     return (
-        <header className="bg-lightbrown py-4">
+        <header className="bg-lightpurple py-4">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                 <div className="md:flex md:items-center md:gap-12">
@@ -25,25 +25,25 @@ export default async function Header() {
                 <nav aria-label="Global">
                 {session ? (
                     <>
-                        <ul className="flex items-center gap-6 text-sm">                       
-                        <li><Link href="/dashboard"> Dashboard </Link></li>
-                        <li><Link href="/wishlist"> Wishlist </Link></li>
-                        <li><Link href="/favorites"> Favorites </Link></li>
-                        <li><Link href="/signout"> Signout </Link></li>
+                        <ul className="flex items-center gap-6 text-sm text-amber-900 font-semibold">                       
+                        <Link href="/dashboard" className="hover:text-purple-800 hover:shadow-md"> Dashboard </Link>
+                        <Link href="/wishlist"  className="hover:text-purple-800 hover:shadow-md"> Wishlist </Link>
+                        <Link href="/favorites" className="hover:text-purple-800 hover:shadow-md"> Favorites </Link>
+                        <Link href="/signout"  className="hover:text-purple-800 hover:shadow-md"> Signout </Link>
                         </ul>    
                     </>  
                 ) : (
                     <div className="flex items-center gap-4">
                         <div className="sm:flex sm:gap-4">
                             <a
-                                className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+                                className="rounded-md px-5 py-2.5 text-sm font-medium text-white bg-amber-900 hover:bg-purple-800 hover:shadow-md"
                                 href="/signin"
                             >
                                 Login
                             </a>
                             <div className="hidden sm:flex">
                             <a
-                                className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
+                                className="rounded-md text-white px-5 py-2.5 text-sm font-medium bg-amber-900 hover:bg-purple-800 hover:shadow-md"
                                 href="/register"
                             >
                                 Register
@@ -56,7 +56,7 @@ export default async function Header() {
             </div>
 
             <div className="block md:hidden">
-                <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                <button className="rounded bg-amber-900 p-2 text-purple-300 transition hover:text-gray-600/75">
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"

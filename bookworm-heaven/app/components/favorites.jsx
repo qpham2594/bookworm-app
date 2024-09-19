@@ -42,7 +42,7 @@ export default function Favorites() {
     };
 
     return (
-        <div className='m-10'>
+        <div className='flex min-h-screen flex-col justify-between p-24 bg-gradient-to-b from-[#f5ebff] via-[#eae4ff] via-[#dddeff] via-[#ccd8ff] to-[#b9c9fb]'>
             <h1 className="text-2xl font-bold mb-4">My Favorite Books</h1>
             {error && <p>{error}</p>}
             <ul>

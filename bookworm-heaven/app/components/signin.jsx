@@ -28,12 +28,12 @@ export default function Login() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-b from-[#f5ebff] via-[#eae4ff] via-[#dddeff] via-[#ccd8ff] to-[#b9c9fb]">
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-96">
-        <h1 className="text-2xl font-bold mb-4">Login</h1>
+        <h1 className="text-2xl font-bold mb-4 text-amber-900">Login</h1>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="email" className="block text-sm font-medium text-amber-900">
             Email
           </label>
           <input
@@ -46,7 +46,7 @@ export default function Login() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="password" className="block text-sm font-medium text-amber-900">
             Password
           </label>
           <input
@@ -58,7 +58,7 @@ export default function Login() {
             required
           />
         </div>
-        <button type="submit" className="w-full py-2 px-4 bg-green-600 text-white rounded hover:bg-green-800">
+        <button type="submit" className="w-full py-2 px-4 rounded text-white bg-amber-900 hover:bg-purple-800 hover:shadow-md">
           Login
         </button>
       </form>
