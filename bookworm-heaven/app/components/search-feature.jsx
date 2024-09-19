@@ -144,7 +144,7 @@ export default function SearchComponent() {
                                         <div className="w-full sm:w-1/2 mb-4 px-2 ">
                                             <div className="h-full py-4 px-6 border border-amber-900 hover:shadow-md hover:bg-lightyellow rounded-lg sm:rounded-tr-xl sm:rounded-none ">
                                                 <h3 className="text-2xl font-bold text-md mb-6">Description: </h3>
-                                                <p className="text-sm"> {truncateText(volumeInfo.description || '', 100)}</p>
+                                                <p className="text-sm"> {truncateText(volumeInfo.description || '', 500)}</p>
                                             </div>
                                         </div>
                                         <div className="w-full sm:w-1/2 mb-4 px-2 ">
